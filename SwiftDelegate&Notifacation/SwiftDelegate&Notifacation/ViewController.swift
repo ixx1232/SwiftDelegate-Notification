@@ -8,16 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, IXXTableVCDelegate {
+    @IBOutlet weak var btn: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    
+    @IBAction func btnClick(sender: UIButton) {
+        let VC = IXXTableVC()
+        
+        VC.delegate = self
+        
+        self.presentViewController(VC, animated: true, completion: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func addTitle(title: String) {
+        self.btn.setTitle(title, forState: UIControlState.Normal)
+        
+        if (((title as NSString).integerValue)%2 == 0) {
+            self.view.backgroundColor = UIColor.redColor()
+        }else {
+            self.view.backgroundColor = UIColor.greenColor()
+        }
     }
 
 

@@ -13,6 +13,7 @@
 		18925D021C508C7000CB7D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18925D011C508C7000CB7D7B /* Assets.xcassets */; };
 		18925D051C508C7000CB7D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18925D031C508C7000CB7D7B /* LaunchScreen.storyboard */; };
 		18925D101C508C7000CB7D7B /* SwiftDelegate_NotifacationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18925D0F1C508C7000CB7D7B /* SwiftDelegate_NotifacationTests.swift */; };
+		18925D1B1C50A06900CB7D7B /* IXXTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18925D1A1C50A06900CB7D7B /* IXXTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		18925D0B1C508C7000CB7D7B /* SwiftDelegate&NotifacationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftDelegate&NotifacationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18925D0F1C508C7000CB7D7B /* SwiftDelegate_NotifacationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDelegate_NotifacationTests.swift; sourceTree = "<group>"; };
 		18925D111C508C7000CB7D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18925D1A1C50A06900CB7D7B /* IXXTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IXXTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				18925D011C508C7000CB7D7B /* Assets.xcassets */,
 				18925D031C508C7000CB7D7B /* LaunchScreen.storyboard */,
 				18925D061C508C7000CB7D7B /* Info.plist */,
+				18925D1A1C50A06900CB7D7B /* IXXTableVC.swift */,
 			);
 			path = "SwiftDelegate&Notifacation";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18925D1B1C50A06900CB7D7B /* IXXTableVC.swift in Sources */,
 				18925CFD1C508C7000CB7D7B /* ViewController.swift in Sources */,
 				18925CFB1C508C7000CB7D7B /* AppDelegate.swift in Sources */,
 			);
