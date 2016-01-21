@@ -8,13 +8,11 @@
 
 import UIKit
 
-protocol IXXTableVCDelegate {
-    func addTitle(title: String)
-}
+
 
 class IXXTableVC: UITableViewController {
 
-    var delegate:IXXTableVCDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,7 +36,7 @@ class IXXTableVC: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.delegate?.addTitle((indexPath.row) .description)
+        NSNotificationCenter.defaultCenter().postNotificationName("cellClick", object: self, userInfo: ["cellIndex":(indexPath.row)])
         
         self.dismissViewControllerAnimated(true, completion: nil)
     }
